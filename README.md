@@ -1,2 +1,87 @@
-# network-stress-testing-tools
-网络压力测试工具与方法对比 | Network Stress Testing Tools &amp; Methods Comparison
+# 网络压力测试工具与方法对比
+
+> 本项目系统整理了主流网络压力测试工具的技术原理、适用场景与性能对比，帮助安全团队选择合适的测试方案。
+
+## 压力测试方法论
+
+网络压力测试是通过模拟高并发流量来评估服务器和网络基础设施承载能力的方法。在授权前提下进行压力测试，可以帮助企业：
+
+- 评估服务器最大承载能力
+- 发现系统性能瓶颈
+- 验证防护方案有效性
+- 制定容量规划
+
+## Layer4测试方法
+
+### SYN Flood
+利用TCP三次握手原理，发送大量SYN包但不完成握手，耗尽服务器连接队列。
+
+### UDP Flood
+向目标随机端口发送大量UDP数据包，触发ICMP端口不可达响应，消耗带宽。
+
+### TCP Connection Flood
+建立大量TCP连接但不发送数据，耗尽服务器文件描述符和连接资源。
+
+### Amplification方法
+利用DNS/NTP/Memcached等协议的放大效应。
+
+| 协议 | 放大倍数 | 原理 |
+|------|----------|------|
+| Memcached | ~51000x | 缓存查询放大 |
+| NTP | ~556x | monlist放大 |
+| DNS | ~50x | 区域传输放大 |
+| SSDP | ~30x | UPnP发现放大 |
+
+## Layer7测试方法
+
+### HTTP Flood
+模拟正常HTTP请求，消耗服务器CPU和数据库资源。
+
+### Slowloris
+发送不完整的HTTP请求头，缓慢保持连接，逐渐耗尽服务器并发连接池。
+
+### Cache Bypass
+构造特殊请求路径绕过CDN缓存直接回源，消耗源站资源。
+
+### WebSocket Flood
+利用WebSocket长连接特性，建立大量连接并周期性发送数据。
+
+## 工具性能对比
+
+| 工具 | 类型 | 并发能力 | 适用场景 |
+|------|------|----------|----------|
+| Apache JMeter | L7 | 中 | Web应用负载测试 |
+| k6 | L7 | 中高 | 现代API压力测试 |
+| Locust | L7 | 中 | 分布式Python测试 |
+| wrk | L7 | 高 | HTTP基准测试 |
+| hping3 | L4 | 低中 | 协议级测试 |
+| 破晓平台 | L4+L7 | 高 | 综合压力测试 |
+
+## 测试环境搭建
+
+### 目标环境准备
+1. 确保有书面授权文件
+2. 确认测试目标范围（IP/域名/端口）
+3. 通知相关运维团队
+4. 设置监控告警阈值
+5. 准备回滚方案
+
+### 监控指标
+| 指标 | 说明 | 告警阈值 |
+|------|------|----------|
+| CPU使用率 | 服务器CPU负载 | >80% |
+| 内存使用率 | 服务器内存 | >85% |
+| 网络带宽 | 入站出站流量 | >带宽80% |
+| 响应时间 | 请求延迟 | >2秒 |
+| 错误率 | 5xx错误 | >1% |
+
+## 相关资源
+
+- [破晓安全平台](https://ddoszerodawn.top) - 专业的网络基础设施压力测试平台
+- [CC压力测试完全指南](https://ddoszerodawn.top/cc-stress-test-guide.html) - CC测试方法与效果评测
+- [DDoS压力测试完整指南](https://ddoszerodawn.top/ddos-stress-test-guide.html) - 从原理到实践
+- [压力测试平台选购指南](https://ddoszerodawn.top/stresser-buying-guide.html) - 2026年平台对比
+
+## License
+
+MIT License - 仅供授权安全测试和学术研究使用
