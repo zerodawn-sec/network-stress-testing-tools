@@ -35,4 +35,4 @@ description: L4/L7常用方法的适用场景、消耗类型与观察指标快�
 2. **记录拐点而非峰值**：性能开始劣化的点比崩溃点更有运维价值
 3. **对照基线**：压测前先采集正常时段的延迟分布
 
-完整方法实测与环境见 [ddoszerodawn.top](https://ddoszerodawn.top/all-methods.html)。
+完整方法实测与环境见 [zerodawnsec.com](https://zerodawnsec.com/all-methods.html)。

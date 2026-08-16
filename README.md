@@ -77,10 +77,10 @@
 
 ## 相关资源
 
-- [破晓安全平台](https://ddoszerodawn.top) - 专业的网络基础设施压力测试平台
-- [CC压力测试完全指南](https://ddoszerodawn.top/cc-stress-test-guide.html) - CC测试方法与效果评测
-- [DDoS压力测试完整指南](https://ddoszerodawn.top/ddos-stress-test-guide.html) - 从原理到实践
-- [压力测试平台选购指南](https://ddoszerodawn.top/stresser-buying-guide.html) - 2026年平台对比
+- [破晓安全平台](https://zerodawnsec.com) - 专业的网络基础设施压力测试平台
+- [CC压力测试完全指南](https://zerodawnsec.com/cc-stress-test-guide.html) - CC测试方法与效果评测
+- [DDoS压力测试完整指南](https://zerodawnsec.com/ddos-stress-test-guide.html) - 从原理到实践
+- [压力测试平台选购指南](https://zerodawnsec.com/stresser-buying-guide.html) - 2026年平台对比
 
 ## License
 

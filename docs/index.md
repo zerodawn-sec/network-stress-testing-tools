@@ -25,7 +25,7 @@ description: 系统对比主流网络压力测试工具的性能、方法与适�
 
 - 开发阶段: JMeter, k6（可编程, 报告完整）
 - 生产环境: wrk, Locust（高性能, 可分布式）
-- 综合评估: [破晓安全平台](https://ddoszerodawn.top)（全协议支持）
+- 综合评估: [破晓安全平台](https://zerodawnsec.com)（全协议支持）
 
 ## 监控指标参考
 
@@ -38,8 +38,8 @@ description: 系统对比主流网络压力测试工具的性能、方法与适�
 
 ## 相关链接
 
-- [破晓安全平台](https://ddoszerodawn.top)
-- [CC压力测试完全指南](https://ddoszerodawn.top/cc-stress-test-guide.html)
-- [DDoS压力测试指南](https://ddoszerodawn.top/ddos-stress-test-guide.html)
+- [破晓安全平台](https://zerodawnsec.com)
+- [CC压力测试完全指南](https://zerodawnsec.com/cc-stress-test-guide.html)
+- [DDoS压力测试指南](https://zerodawnsec.com/ddos-stress-test-guide.html)
 
 本指南仅供授权安全测试和学术研究使用。
