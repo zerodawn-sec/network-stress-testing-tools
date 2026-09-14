@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zerodawn-sec.github.io/network-stress-testing-tools/sitemap.xml
