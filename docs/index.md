@@ -35,6 +35,7 @@ description: 系统对比主流网络压力测试工具的性能、方法与适�
 | 文档 | 内容 |
 |------|------|
 | [压测面板选购清单](panel-selection-checklist.html) | 12项硬指标核查框架 |
+| [游戏面板抗打架构评估](game-panel-protection.html) | 从连接层到应用层的评估框架 |
 | [L4/L7方法实战排行2026](l4-l7-methods-ranking-2026.html) | T0-T3分级+能力边界 |
 | [压力测试报告解读](stress-test-report-reading.html) | 核心指标怎么看 |
 | [工具选型决策树](tool-selection-guide.html) | 功率效率/协议覆盖/场景适配 |
