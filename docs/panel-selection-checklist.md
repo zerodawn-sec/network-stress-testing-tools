@@ -38,3 +38,5 @@ description: 评估压力测试面板的12项可验证指标，从方法覆盖�
 
 - [工具选型决策树](tool-selection-guide.md)
 - [L4/L7方法排行](l4-l7-methods-ranking-2026.md)
+- [Stresser Lab vs ZeroDawn Comparison](https://zerodawnlab.com/stresserlab-vs-zerodawn.html)
+- [What Is an IP Stresser](https://zerodawnlab.com/what-is-ip-stresser.html)

@@ -87,3 +87,8 @@
 ---
 
 *更多压力测试指标解读，请参考 [DDoS压力测试完整指南](https://zerodawnsec.com/ddos-stress-test-guide.html)*
+
+### English Resources
+
+- [How to Read a Stress Test Report](https://zerodawnlab.com/all-methods.html)
+- [ZeroDawn IP Booter & Stresser Review](https://zerodawnlab.com/ip-stresser-review-2026.html)
